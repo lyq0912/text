@@ -1,0 +1,51 @@
+选择器：
+标签选择器：如<p>
+类选择器：class
+id选择器：
+通配符选择器：*：全部标签选择
+
+
+text-indent：文本缩进 单位 ：em（一个em为一个字）
+line-height：行高 单位px
+text-decoration：是否加下划线 none：不加
+
+.x  生成<div class="x">
+#x 生成<div id="x">
+ul>li 生成<ul>
+		<li>
+
+p*3 生成：
+<p>
+<p>
+<p>
+
+a+p 生成：
+<a>
+<p>
+
+.x$*3生成：
+<div class="x1">
+<div class="x2">
+<div class="x3">
+
+
+a:link  未访问的链接
+a:visited  已访问的链接
+a:hover  鼠标移到链接上
+a:active  选定的链接
+
+
+块级标签转行标签： display：inline；
+行标签转快标签：display：block；
+行内块标签：display：inline-block；
+
+背景颜色：background-color；
+背景图片：background-image：url（图片地址）
+背景是否平铺：background-repeat：no-repeat 不平铺
+背景位置：background-position：x y；x，y：方位名词：left左，right右，top上，bottom下；x，y可以为精确坐标。
+背景附着：background-attachment：scroll：背景随着滚动条滑动 / fixed：背景固定。 
+背景透明度：background：agba（0，0，0，透明底（0.1......0.9））
+
+css权重：继承权重为0；标签(0,0,0,0)<类(0,0,1,0)<id(0,1,0,0)<style(1,0,0,0)< ! important
+	选中标签才计算权重；
+		
