@@ -46,7 +46,7 @@ a:active  选定的链接						active：主动的，积极的
 背景颜色：background-color；				background：背景，后台
 背景图片：background-image：url（图片地址）
 背景是否平铺：background-repeat：no-repeat 不平铺								repeat：重复
-背景位置：background-position：x y；x，y：方位名词：left左，right右，top上，bottom下；x，y可以为精确坐标。		position：位置
+背景位置：background-position：x y；x轴，y轴：方位名词：left左，right右，top上，bottom下；x，y可以为精确坐标。		position：位置
 背景附着：background-attachment：scroll：背景随着滚动条滑动 / fixed：背景固定。 				attachment：依附，依恋
 背景透明度：background：agba（0，0，0，透明底（0.1......0.9））						scroll：卷轴、fixed：固定的
 
@@ -61,9 +61,13 @@ css权重：继承权重为0；标签(0,0,0,0)<类(0,0,1,0)<id(0,1,0,0)<style(1,0,0,0)< ! im
 div：	盒子大小：= 内容px + (上下左右) 边距px + (上下左右) 边框px  
 	border：边框    border-top：上边框、border-（left、bottom、right）左 下 右 边框
  	宽：width：单位px
-	样式：style：实线：solid、虚线：dashend
+	样式：style：实线：solid、虚线：dashend、点线：dotted
 	颜色：color
 	合并相邻边框：collapse
+	圆角边框：border-radius：50%；可以为精确值：px；  长方形放 宽 精确值   ，正方形放边长或者百分比。
+	盒子阴影：box-shadow：水平、垂直、虚实、影子大小 、影子颜色(rgba(0,0,0,.3))（位置顺序不可变）(前两个必写)
+
+	
 	
 	内边距：padding-(top、bottom、left、right)  px（上下左右边距）   综合写法：padding：top：上、right：右、bottom：下、left：左（顺序固定）
 		一个值：上下左右都一样、 两个值：上下一样、左右一样。三个值：上下不一样，左右一样，
@@ -76,4 +80,12 @@ div：	盒子大小：= 内容px + (上下左右) 边距px + (上下左右) 边框px
 	行内元素只设置左右内外边距，不设置上下内外边距
 
 	盒子嵌套：1.可以为父系定义上边框 ：border-top：2.可以给父级指定一个 padding-top：比如1px。3.为父级添加元素：overflow：hidden。
+
+
+
+
+
+css 提供三种机制来摆放盒子（div）普通流、浮动、定位
+
+浮动：float：none 、left、 right。 
 	
