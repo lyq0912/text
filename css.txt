@@ -87,5 +87,34 @@ div：	盒子大小：= 内容px + (上下左右) 边距px + (上下左右) 边框px
 
 css 提供三种机制来摆放盒子（div）普通流、浮动、定位
 
-浮动：float：none 、left、 right。 
+浮动：
+	float：none 、left、 right。 
+	一个div可以在另外的div上，div添加float可以变成类似  行内块  的格式。一行装不下，变两行。
+	两个盒子浮边框会紧贴着的，所以像素大小要严格精确。否则布局会改变。
+
+
+清除浮动：（什么时候清除？--1.父级没高度；2.子盒子浮动；3.影响下面布局。）
+	
+	clear：left、right、both(常用)（清除：左、右、左右两侧）
+
+	方法一：在最后一个浮动标签添加一个空标签，空标签添加clear：both。
+	方法二：给父级添加属性 overflow：hidden、auto、scroll。慎重使用
+
+	方法三(常用)： 伪元素法（一定要调用）：
+		. clearfix:after{ content：""；display：block；height：0；visibility：hidden；clear：both;}
+		ie6、ie7 需要特别添加一行：. clearfix { *zoom：1 }              
+	
+	方法四(常用)：双伪元素（一定要调用）：
+		.clearfix:before,.clearfix:after { content:""；display:table}	.clearfix:after { clear:both}
+		ie6、ie7 需要特别添加一行：. clearfix { *zoom：1 } 
+
+
+
+ps切图：	导出切出的图片：点击新建--再点击导出--最后点击存储为web所用格式--选中的切片：（格式：一般为jpg，透明图片为png）
+	清除切片：点击视图--再点击清除所有切片。
+	方法1.选中
+	方法2.图层菜单--新建基于图层的切片
+	方法3.利用参考线切图。
+
+
 	
